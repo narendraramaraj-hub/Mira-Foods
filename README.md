@@ -41,3 +41,7 @@ See [COMPLIANCE.md](COMPLIANCE.md) for the UK rules behind the wording.
 - `images/products/`: ChaiCo and hyCane can images cut from the Asal-Karak catalogue. Swap for official pack shots when available.
 - `images/mira-mark.svg`: placeholder Mira Foods mark. Replace with the official logo.
 - Photo placeholders: put an `<img>` inside each `<div class="photo">` (the placeholder texture hides itself). Suggested size 1600 px wide, WebP or JPEG, under 300 KB.
+
+## Preview on localhost
+
+Double-click `start-server.bat`. It opens http://localhost:8000 in your browser; close the black window to stop it. No installs are needed (it uses Windows PowerShell). To use another port: `powershell -ExecutionPolicy Bypass -File serve.ps1 -Port 8080`.
