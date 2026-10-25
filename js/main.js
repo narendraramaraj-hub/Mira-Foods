@@ -1,4 +1,4 @@
-/* Bee's Water UK — site script
+/* Mira Foods — site script
    1. Mobile navigation toggle
    2. Cookie consent (UK GDPR / PECR): nothing non-essential loads until the visitor opts in
    3. Footer year
@@ -27,7 +27,7 @@
   /* 2. Cookie consent
      The choice itself is kept in localStorage, which is strictly necessary to remember it.
      Analytics only loads after "Accept". */
-  var CONSENT_KEY = "bw-cookie-consent";
+  var CONSENT_KEY = "mira-cookie-consent";
   var banner = document.getElementById("cookie-banner");
 
   function readConsent() {
@@ -75,6 +75,10 @@
     statusEl.textContent = c === "accepted" ? "Analytics cookies: allowed"
       : c === "rejected" ? "Analytics cookies: not allowed" : "You have not made a choice yet.";
   }
+
+  // Keep the current brand visible in the brand bar on narrow screens
+  var currentBrand = document.querySelector(".brand-nav [aria-current]");
+  if (currentBrand) currentBrand.closest("ul").scrollLeft = currentBrand.offsetLeft - 16;
 
   /* 3. Year */
   document.querySelectorAll("[data-year]").forEach(function (el) {
