@@ -37,7 +37,7 @@ See [COMPLIANCE.md](COMPLIANCE.md) for the UK rules behind the wording.
 
 ## Images
 
-- `images/brands/`: logos supplied for ChaiCo, Little India (Anvi) and Greenish Ora, plus a placeholder Bee's Water mark.
+- `images/brands/`: logos supplied for ChaiCo, Little India (Anvi) and Greenish Ora. Bee's Water uses the illustrated bottles in `images/` until official logo files arrive.
 - `images/products/`: ChaiCo and hyCane can images cut from the Asal-Karak catalogue. Swap for official pack shots when available.
 - `images/mira-mark.svg`: placeholder Mira Foods mark. Replace with the official logo.
 - Photo placeholders: put an `<img>` inside each `<div class="photo">` (the placeholder texture hides itself). Suggested size 1600 px wide, WebP or JPEG, under 300 KB.
