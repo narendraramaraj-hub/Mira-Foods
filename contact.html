@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us | Bee’s Water</title>
+  <meta name="description" content="Get in touch with the Bee’s Water UK team for questions, feedback, press or trade enquiries.">
+  <meta name="theme-color" content="#e9a93a">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- TODO: add og:image and canonical URL once the domain is confirmed -->
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html" aria-label="Bee’s Water home">
+        <img src="images/logo-mark.svg" alt="" width="40" height="40">
+        <span>bee’s water</span>
+      </a>
+      <!-- TODO: swap the placeholder mark for the official Bee’s Water logo files from Bee’s Beverage Corporation -->
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>Menu
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="flavours.html">Our Flavours</a></li>
+          <li><a href="ingredients.html">Ingredients &amp; Wellness</a></li>
+          <li><a href="where-to-buy.html">Where to Buy</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap">
+        <span class="eyebrow">Contact</span>
+        <h1>We’d love to hear from you</h1>
+        <p class="lede">Questions about a flavour, feedback, press, or interested in stocking Bee’s Water? Drop us a line.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap split" style="align-items:start">
+        <div class="card">
+          <!-- TODO: set action="..." to your form service endpoint (e.g. Formspree) and method="post".
+               Until then main.js shows a message instead of sending. -->
+          <form id="contact-form" novalidate>
+            <div>
+              <label for="name">Your name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div>
+              <label for="email">Email address</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div>
+              <label for="topic">What’s it about?</label>
+              <select id="topic" name="topic">
+                <option value="general">General question</option>
+                <option value="feedback">Feedback on a flavour</option>
+                <option value="trade">Stocking Bee’s Water (trade)</option>
+                <option value="press">Press and partnerships</option>
+              </select>
+            </div>
+            <div>
+              <label for="business">Business name <span class="small">(trade enquiries only)</span></label>
+              <input id="business" name="business" type="text" autocomplete="organization">
+            </div>
+            <div>
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <label class="check">
+              <input type="checkbox" name="marketing" value="yes">
+              <span>Yes, send me occasional emails about new flavours and offers. You can unsubscribe at any time.</span>
+            </label>
+            <p class="small">We’ll use your details to reply to your message. See our <a href="privacy.html">privacy policy</a> for how we look after your data.</p>
+            <div><button class="btn" type="submit">Send message</button></div>
+            <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+        <div>
+          <h2>Other ways to reach us</h2>
+          <p><strong>Email</strong><br><span class="todo">TODO: hello@yourdomain.co.uk</span></p>
+          <p><strong>Trade enquiries</strong><br><span class="todo">TODO: trade@yourdomain.co.uk</span></p>
+          <p><strong>Phone</strong><br><span class="todo">TODO: UK phone number and opening hours</span></p>
+          <p><strong>Post</strong><br>Mira Foods<br><span class="todo">TODO: UK business address</span></p>
+          <div class="photo photo--wide" style="margin-top:1.5rem">
+            <span class="todo">TODO: friendly photo, e.g. bottles on a shop shelf</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      // Pre-select the topic when arriving from a "trade enquiry" link (contact.html?topic=trade)
+      (function () {
+        var t = new URLSearchParams(location.search).get("topic");
+        var sel = document.getElementById("topic");
+        if (t && sel && sel.querySelector('option[value="' + t.replace(/[^a-z]/g, "") + '"]')) sel.value = t.replace(/[^a-z]/g, "");
+      })();
+    </script>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <p class="footer-brand"><img src="images/logo-mark.svg" alt="" width="36" height="36">bee’s water</p>
+          <p>Water sweetened only with organic honey, with added vitamin C. Made in the USA and brought to the UK by Mira Foods.</p>
+          <p class="small" style="color:#d9c7a6">Contains honey: not suitable for babies under 12 months.</p>
+          <p><a href="https://www.instagram.com/drinkbeeswater" rel="noopener">@drinkbeeswater</a> <span class="todo">TODO: confirm UK social handles</span></p>
+        </div>
+        <div>
+          <h2>Explore</h2>
+          <ul>
+            <li><a href="flavours.html">Our Flavours</a></li>
+            <li><a href="ingredients.html">Ingredients &amp; Wellness</a></li>
+            <li><a href="where-to-buy.html">Where to Buy</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Help</h2>
+          <ul>
+            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="where-to-buy.html#trade">Stock Bee’s Water</a></li>
+            <li><a href="privacy.html">Privacy policy</a></li>
+            <li><a href="cookies.html">Cookie policy</a></li>
+            <li><button class="link-button" type="button" data-cookie-settings>Cookie settings</button></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-legal">
+        <p>© <span data-year>2026</span> Mira Foods <span class="todo">TODO: full legal name, company number and registered office</span>. UK importer and distributor of Bee’s Water.</p>
+        <p>Bee’s Water® is a trademark of Bee’s Beverage Corporation, Hamilton, New Jersey, USA. <span class="todo">TODO: confirm trademark and distribution wording with Bee’s Beverage Corporation</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="cookie-banner" class="cookie-banner" role="region" aria-label="Cookie consent" hidden>
+    <h2>Cookies, your choice</h2>
+    <p>We only use what’s needed to make this site work. With your permission we’d also like to use analytics cookies to see which pages people find useful. You can change your mind at any time. <a href="cookies.html">Read our cookie policy</a>.</p>
+    <div class="btn-row">
+      <button class="btn" type="button" data-consent="reject">Reject analytics</button>
+      <button class="btn" type="button" data-consent="accept">Accept analytics</button>
+    </div>
+  </div>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
