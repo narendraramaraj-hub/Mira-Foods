@@ -1,10 +1,21 @@
-# Bee's Water UK website: compliance notes
+# Mira Foods website: compliance notes
 
 Notes on the UK rules that shaped the site copy. This is a working checklist, not legal advice; have the labelling and claims checked by a trading standards officer or food labelling adviser before launch.
 
-## Health and nutrition claims (GB Nutrition and Health Claims Register)
+## All brands
 
-- **No health claims are live without your approval.** The only two health claims on the site are in a marked TODO block on `ingredients.html`, copied word for word from the GB register for vitamin C:
+- **No health claims** appear for ChaiCo, hyCane, Anvi or Greenish Ora. Words like "superfood", "immunity", "detox" or "natural energy" are general health claims and are not used.
+- **hyCane**: "no added sugar" is allowed for sugarcane juice with the statement "contains naturally occurring sugars", which is on the page. The catalogue phrases "natural energy" and "feel the fresh lift" are not used.
+- **hyCane Energy** (coming soon): 50 mg caffeine per 250 ml is 200 mg/l, above the 150 mg/l threshold, so the label and site must say "High caffeine content. Not recommended for children or pregnant or breast-feeding women" with the mg/100 ml figure (20 mg). That wording is on the page.
+- **ChaiCo**: Karak Chai contains milk (allergen). The Vegan version uses oats (gluten unless certified). The three "coming soon" chais show no nutrition yet because the catalogue repeats the Original's figures as placeholders.
+- **Anvi**: mustard seed is a major allergen; wheat and multigrain flours contain gluten. Ashwagandha, triphala, tulsi, moringa and amla powders and aloe juices are deliberately left off: check novel food and food supplement status, and the FSA's safety concerns about ashwagandha, before listing them. "Organic" (Jaisal Organic) needs certification recognised in GB plus a GB certificate of inspection for each import.
+- **Greenish Ora**: moringa powder keeps the brand's "consult your doctor if pregnant or breastfeeding" advice.
+- **Per 100 ml values** for ChaiCo and hyCane are calculated from the catalogue's per-can figures and flagged TODO until checked against the labels.
+- **Pack images** for ChaiCo and hyCane come from the Asal-Karak catalogue; get permission or official pack shots before launch.
+
+## Bee's Water: health and nutrition claims (GB Nutrition and Health Claims Register)
+
+- **No health claims are live without your approval.** The only two health claims on the site are in a marked TODO block on `bees-water-ingredients.html`, copied word for word from the GB register for vitamin C:
   - "Vitamin C contributes to the normal function of the immune system."
   - "Vitamin C contributes to the protection of cells from oxidative stress."
 - Conditions: the product must be at least a "source of" vitamin C (7.5% NRV per 100 ml for drinks). At 38 mg/100 ml (48% NRV) it is also "high in" vitamin C (15% NRV per 100 ml), which is the nutrition claim used on the site.
