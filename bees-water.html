@@ -3,31 +3,30 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Our Flavours | Bee’s Water</title>
-  <meta name="description" content="Native Blueberry, Simply Classic, Golden Ginger Lemon and Tangy Lemon. Four honey-sweetened flavours with added vitamin C, in 473 ml bottles.">
-  <meta name="theme-color" content="#e9a93a">
+  <title>Bee’s Water | Honey-sweetened water with vitamin C | Mira Foods</title>
+  <meta name="description" content="Bee’s Water is filtered water sweetened only with organic honey, with added vitamin C. Native Blueberry, Simply Classic, Golden Ginger Lemon and Tangy Lemon.">
+  <meta name="theme-color" content="#2d4030">
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/styles.css">
   <!-- TODO: add og:image and canonical URL once the domain is confirmed -->
 </head>
-<body>
+<body class="theme-bees">
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header">
     <div class="wrap">
-      <a class="brand" href="index.html" aria-label="Bee’s Water home">
-        <img src="images/logo-mark.svg" alt="" width="40" height="40">
-        <span>bee’s water</span>
+      <a class="brand" href="index.html" aria-label="Mira Foods home">
+        <img src="images/mira-mark.svg" alt="" width="40" height="40">
+        <span>Mira Foods<small>Healthy priorities</small></span>
       </a>
-      <!-- TODO: swap the placeholder mark for the official Bee’s Water logo files from Bee’s Beverage Corporation -->
+      <!-- TODO: swap the placeholder mark for the official Mira Foods logo files -->
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
         <span class="nav-toggle-bars" aria-hidden="true"></span>Menu
       </button>
       <nav id="site-nav" class="site-nav" aria-label="Main">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="flavours.html" aria-current="page">Our Flavours</a></li>
-          <li><a href="ingredients.html">Ingredients &amp; Wellness</a></li>
+          <li><a href="brands.html" aria-current="page">Our Brands</a></li>
           <li><a href="where-to-buy.html">Where to Buy</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
@@ -35,22 +34,55 @@
       </nav>
     </div>
   </header>
-
+  <nav class="brand-nav" aria-label="Brands">
+    <div class="wrap">
+      <ul>
+        <li><a href="bees-water.html" aria-current="page">Bee’s Water</a></li>
+        <li><a href="bees-water-ingredients.html">Bee’s Water ingredients</a></li>
+        <li><a href="chaico.html">ChaiCo &amp; hyCane</a></li>
+        <li><a href="anvi.html">Anvi</a></li>
+        <li><a href="greenish-ora.html">Greenish Ora</a></li>
+      </ul>
+    </div>
+  </nav>
   <main id="main">
-    <section class="page-hero">
+    <section class="hero">
       <div class="wrap">
-        <span class="eyebrow">Our flavours</span>
-        <h1>Four ways to enjoy honey</h1>
-        <p class="lede">Every bottle starts with filtered water and organic honey. Then we add vitamin C and a flavour of its own.</p>
-        <ul class="tag-list" aria-label="Jump to a flavour">
-          <li><a href="#native-blueberry">Native Blueberry</a></li>
-          <li><a href="#simply-classic">Simply Classic</a></li>
-          <li><a href="#golden-ginger-lemon">Golden Ginger Lemon</a></li>
-          <li><a href="#tangy-lemon">Tangy Lemon</a></li>
-        </ul>
+        <div class="hero-copy">
+          <span class="eyebrow">Now in the UK</span>
+          <h1>Sweetened by bees. Nothing else.</h1>
+          <p class="lede">Bee’s Water is filtered water with organic honey and added vitamin C. No refined cane sugar, no stevia, no artificial sweeteners. Just four easy-drinking flavours, lovely cold and soothing warm.</p>
+          <div class="btn-row">
+            <a class="btn" href="bees-water.html">Meet the flavours</a>
+            <a class="btn btn--ghost" href="where-to-buy.html">Where to buy</a>
+          </div>
+        </div>
+        <div class="hero-bottles" aria-hidden="true">
+          <img src="images/bottle-blueberry.svg" alt="" width="120" height="330">
+          <img src="images/bottle-classic.svg" alt="" width="120" height="330">
+          <img src="images/bottle-ginger-lemon.svg" alt="" width="120" height="330">
+          <img src="images/bottle-lemon.svg" alt="" width="120" height="330">
+        </div>
+        <!-- TODO: replace the illustrated bottles with a large hero photograph of the four bottles (approx. 1600 x 1200 px, WebP/JPEG) -->
       </div>
     </section>
 
+    <section class="section">
+      <div class="wrap center">
+        <span class="eyebrow">Simple by nature</span>
+        <h2>A short ingredient list you can actually read</h2>
+        <p class="lede">Filtered water, organic honey, natural flavour, vitamin C and a touch of plant extract. That’s it.</p>
+        <ul class="badges">
+          <li><span aria-hidden="true">🍯</span>Organic honey</li>
+          <li><span aria-hidden="true">🍊</span>Added vitamin C</li>
+          <li><span aria-hidden="true">☕</span>Caffeine free</li>
+          <li><span aria-hidden="true">🌾</span>Gluten free</li>
+          <li><span aria-hidden="true">🌱</span>Non-GMO</li>
+          <li><span aria-hidden="true">♻️</span>Recyclable bottle</li>
+        </ul>
+        <p class="small" style="margin-top:1rem">TODO markers on this site flag anything still to confirm. <span class="todo">TODO: confirm each badge applies to the UK-labelled product</span></p>
+      </div>
+    </section>
     <div class="wrap">
       <p class="todo-block small"><strong>TODO:</strong> nutrition values below are converted from the US label (per 473&nbsp;ml bottle) into the UK per-100&nbsp;ml format. Please replace them with the figures on the UK label once it has been checked by your labelling adviser or trading standards. Vitamin C %&nbsp;NRV uses the UK reference of 80&nbsp;mg a day.</p>
 
@@ -198,14 +230,46 @@
         </div>
       </article>
     </div>
+    <section class="section">
+      <div class="wrap split">
+        <div class="photo photo--tall">
+          <span class="todo">TODO: lifestyle photo, bottle on a sunny café table</span>
+        </div>
+        <div>
+          <span class="eyebrow">Cold or warm</span>
+          <h2>One bottle, two moods</h2>
+          <p>Straight from the fridge, Bee’s Water is a crisp, lightly sweet drink for busy days, gym bags and desk drawers. On a grey afternoon, pour it into a mug and warm it gently for something that tastes like a honey-and-lemon hug.</p>
+          <div class="serve">
+            <div class="card"><span aria-hidden="true">🧊</span><h3>Cold</h3><p>Chill and enjoy for refreshing hydration.</p></div>
+            <div class="card"><span aria-hidden="true">♨️</span><h3>Warm</h3><p>Pour into a mug and heat gently. Please don’t heat it in the bottle.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <section class="section section--cream2">
+    <section class="section section--ink">
+      <div class="wrap split split--flip">
+        <div class="photo">
+          <span class="todo">TODO: photo of honey dripping from a dipper or a beekeeper at work</span>
+        </div>
+        <div>
+          <span class="eyebrow" >Why honey?</span>
+          <h2>Sweetness the way nature makes it</h2>
+          <p>Instead of refined cane sugar or sweeteners, every bottle is sweetened only with organic honey. You get a soft, rounded sweetness and a taste you’ll recognise from the very first sip.</p>
+          <p>Each 473&nbsp;ml bottle has 90 calories and 23&nbsp;g of sugars, all of it from honey. We think you should know exactly what’s in your drink.</p>
+          <a class="btn btn--sand" href="bees-water-ingredients.html">See what’s inside</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
       <div class="wrap cta-band">
-        <h2>Fancy a case?</h2>
-        <p class="lede">Stock up with a case of 12 bottles. <span class="todo">TODO: confirm single or mixed-flavour cases and the price, e.g. £XX.XX for 12</span></p>
+        <span class="eyebrow">Shops and cafés</span>
+        <h2>Stock Bee’s Water</h2>
+        <p class="lede">Shelf stable, 12 bottles per case, 108 cases per pallet. <span class="todo">TODO: confirm single or mixed-flavour cases and the case price</span></p>
         <div class="btn-row">
-          <a class="btn" href="where-to-buy.html">Where to buy</a>
-          <a class="btn btn--ghost" href="ingredients.html">What’s inside</a>
+          <a class="btn" href="contact.html?topic=trade">Make a trade enquiry</a>
+          <a class="btn btn--ghost" href="bees-water-ingredients.html">Ingredients and nutrition</a>
         </div>
       </div>
     </section>
@@ -215,25 +279,31 @@
     <div class="wrap">
       <div class="footer-grid">
         <div>
-          <p class="footer-brand"><img src="images/logo-mark.svg" alt="" width="36" height="36">bee’s water</p>
-          <p>Water sweetened only with organic honey, with added vitamin C. Made in the USA and brought to the UK by Mira Foods.</p>
-          <p class="small" style="color:#d9c7a6">Contains honey: not suitable for babies under 12 months.</p>
-          <p><a href="https://www.instagram.com/drinkbeeswater" rel="noopener">@drinkbeeswater</a> <span class="todo">TODO: confirm UK social handles</span></p>
+          <p class="footer-brand"><img src="images/mira-mark.svg" alt="" width="38" height="38">Mira Foods</p>
+          <p>Natural, plant-rich food and drink from the USA, India, Taiwan and the UK, for UK shops and shoppers.</p>
+          <p><span class="todo">TODO: Mira Foods social media links</span></p>
         </div>
         <div>
-          <h2>Explore</h2>
+          <h2>Our brands</h2>
           <ul>
-            <li><a href="flavours.html">Our Flavours</a></li>
-            <li><a href="ingredients.html">Ingredients &amp; Wellness</a></li>
-            <li><a href="where-to-buy.html">Where to Buy</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="bees-water.html">Bee’s Water</a></li>
+            <li><a href="chaico.html">ChaiCo &amp; hyCane</a></li>
+            <li><a href="anvi.html">Anvi</a></li>
+            <li><a href="greenish-ora.html">Greenish Ora</a></li>
           </ul>
         </div>
         <div>
-          <h2>Help</h2>
+          <h2>Company</h2>
           <ul>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="where-to-buy.html">Where to buy</a></li>
+            <li><a href="where-to-buy.html#trade">Trade and wholesale</a></li>
             <li><a href="contact.html">Contact us</a></li>
-            <li><a href="where-to-buy.html#trade">Stock Bee’s Water</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Legal</h2>
+          <ul>
             <li><a href="privacy.html">Privacy policy</a></li>
             <li><a href="cookies.html">Cookie policy</a></li>
             <li><button class="link-button" type="button" data-cookie-settings>Cookie settings</button></li>
@@ -241,8 +311,8 @@
         </div>
       </div>
       <div class="footer-legal">
-        <p>© <span data-year>2026</span> Mira Foods <span class="todo">TODO: full legal name, company number and registered office</span>. UK importer and distributor of Bee’s Water.</p>
-        <p>Bee’s Water® is a trademark of Bee’s Beverage Corporation, Hamilton, New Jersey, USA. <span class="todo">TODO: confirm trademark and distribution wording with Bee’s Beverage Corporation</span></p>
+        <p>© <span data-year>2026</span> Mira Foods <span class="todo">TODO: full legal name, company number and registered office</span></p>
+        <p>Bee’s Water®, ChaiCo, hyCane, Little India® and Greenish Ora are trademarks of their respective owners and appear here because Mira Foods supplies their products. <span class="todo">TODO: confirm distribution agreements and trademark wording with each brand owner</span></p>
       </div>
     </div>
   </footer>
