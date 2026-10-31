@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 120" role="img" aria-label="BRCGS">
+  <!-- TODO: plain text badge, not an official mark. Replace with the official logo once permission is given. -->
+  <rect x="2" y="2" width="236" height="116" rx="14" fill="#ffffff" stroke="#2d4030" stroke-width="3"/>
+  <text x="120" y="58" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#2d4030">BRCGS</text>
+  <text x="120" y="88" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#2d4030">Food safety standard</text>
+</svg>
