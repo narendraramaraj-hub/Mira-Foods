@@ -330,6 +330,12 @@ a.brand-card:hover { transform: translateY(-4px); color: var(--ink); }
 .product-card__body p { margin: 0; color: var(--ink-soft); }
 .product-card .price { margin-top: auto; padding-top: 0.5rem; }
 
+/* Certification logos */
+.cert-row { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.75rem; margin: 0.4rem 0 0; }
+.cert-row img { height: 2.75rem; width: auto; }
+.cert-row--large { gap: 1rem; margin-top: 1.25rem; }
+.cert-row--large img { height: 5.5rem; }
+
 /* Bee's Water flavour cards */
 .flavour-card {
   --c: var(--brand);
