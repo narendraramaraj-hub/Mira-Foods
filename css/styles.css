@@ -32,7 +32,7 @@
 
 .theme-bees   { --brand: #e9a93a; --brand-deep: #9a5b0c; --hero-a: #f6d48b; --hero-b: #e9a93a; }
 .theme-chaico { --brand: #db5c2d; --brand-deep: #a63d16; --hero-a: #f8d2bf; --hero-b: #ef9a74; }
-.theme-jaisal   { --brand: #2e3192; --brand-deep: #2e3192; --hero-a: #e6e7f8; --hero-b: #f2c27e; }
+.theme-little-india   { --brand: #2e3192; --brand-deep: #2e3192; --hero-a: #e6e7f8; --hero-b: #f2c27e; }
 .theme-ora    { --brand: #b8862b; --brand-deep: #7a5a17; --hero-a: #eef0dc; --hero-b: #c8d59a; }
 
 *,
@@ -304,7 +304,7 @@ a.brand-card:hover { transform: translateY(-4px); color: var(--ink); }
 .brand-card__more { margin-top: auto; padding-top: 0.5rem; font-weight: 700; color: var(--green); }
 .c-bees-bg { --c: linear-gradient(160deg, #f6d48b, #e9a93a); }
 .c-chaico-bg { --c: linear-gradient(160deg, #fbe2d4, #f3b08f); }
-.c-jaisal-bg { --c: linear-gradient(160deg, #eef0fb, #f6d7a8); }
+.c-little-india-bg { --c: linear-gradient(160deg, #eef0fb, #f6d7a8); }
 .c-ora-bg { --c: #111; }
 .c-coming-bg { --c: repeating-linear-gradient(135deg, var(--cream-2) 0 14px, var(--sand-light) 14px 28px); }
 .wordmark { font-family: var(--font-head); font-size: 2.2rem; font-weight: 700; color: var(--ink); }
